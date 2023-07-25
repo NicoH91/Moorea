@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <section>
+        <div class="container">
+            <div class="user signinBx">
+                <div class="imgBx"> <img src="img/Moorea.jpg" alt=""></div>
+                <div class="formBx">
+                    <form>
+                        <h2>Sign In</h2>
+                        <input type="text" placeholder="pilchita" id="usuario">
+                        <input type="password" placeholder="123" id="contrasenia">
+                        <input type="submit" value="login"  id="login">
+                        <p class="signup"> dont have an account <a href="#" onclick="toggleForm();"> Sign up</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user signupBx">
+
+                <div class="formBx">
+                    <form>
+                        <h2>Create an account</h2>
+                        <input type="text" placeholder="your username">
+                        <input type="text" placeholder="Email Adress">
+                        <input type="password" placeholder="Create password">
+                        <input type="password" placeholder="confirm password">
+
+                        <input type="submit" value="Sign Up">
+                        <p class="signup"> Already have an account? <a href="#" onclick="toggleForm();"> Sign In</a></p>
+                    </form>
+                </div>
+                <div class="imgBx"> <img src="img/Bora.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+    
+</body>
+
+</html>

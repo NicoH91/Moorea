@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ficha.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="profile">
+        <!-- setting lights and dark -->
+        <div class="profile-setting">
+            <div class="profile-switch">
+                <i class="fas fa-adjust"></i>
+                <label class="switcher" for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </div>
+        <!-- body profile -->
+        <img class="profile-image" src="img/login.jpg" alt="">
+        <h2>Pilchita</h2>
+        <span class="raza">Galgo</span>
+        <p><i class="fas fa-map-marker-alt"></i>Argentina</p>
+        <hr class="divider">
+
+        <h3 class="title"> Acerca</h3>
+        <p> 2 años</p>
+        <p> 23kilos</p>
+        <hr class="divider">
+
+        <button class="profile-button" id="estudios">Estudios</button>
+        <div class="profile-calculate">
+            <div class="card">
+                <div class="card-icon behance">
+                    <i class="fa-solid fa-notes-medical" id="historia"></i>
+                </div>
+                <!-- <h3>85.4k</h3> -->
+                <span>Historia</span>
+            </div>
+            <div class="card">
+                <div class="card-icon github">
+                    <i class="fa-solid fa-pills" id="medicacion"></i>
+                </div>
+                <!-- <h3>18k</h3> -->
+                <span>Medicacion</span>
+            </div>
+            <div class="card">
+                <div class="card-icon dribbble">
+                    <i class="fa-solid fa-hospital" id="veterinaria"></i>
+                </div>
+                <!-- <h3>18k</h3> -->
+                <span>Veterinaria</span>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="ficha.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+
+</body>
+
+</html>

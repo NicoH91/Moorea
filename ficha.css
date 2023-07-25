@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+:root {
+    --cardColor: #f5f5f5;
+    --fontColor: #333;
+    --grey: #909090;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+
+
+}
+
+body {
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #005c97, #363795);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cardColor);
+    color: var(--fontColor);
+    width: 350px;
+    height: auto;
+    padding: 1.5rem 2rem 2rem 2rem;
+    border-radius: 15px;
+    /* text-align: center; */
+    position: relative;
+    box-shadow: rgba (0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.profile-switch {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 30px;
+}
+
+.switcher {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.switcher input {
+    display: none;
+}
+
+.fa-adjust {
+    transform: rotate(180deg);
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider::before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+input:checked+.slider::before {
+    transform: translateX(20px);
+}
+
+input:checked+.slider {
+    background-color: red;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.profie>h2 {
+    font-size: 24px;
+    margin: 0.4rem 0;
+    letter-spacing: 1;
+}
+
+.raza {
+    font-size: 20px;
+    letter-spacing: 2;
+    color: var(--grey);
+}
+
+.profile-calculate {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-icon>i {
+    font-size: 25px;
+    color: #fff;
+}
+
+.behance {
+    background-image: linear-gradient(to top, #3b59c5 0%, #4896ef);
+}
+
+.github {
+    background-image: linear-gradient(to top, #7a10ac 0%, #d121fd 100%);
+}
+
+.dribbble {
+    background-image: linear-gradient(to top, #ec334b 0%, #ee626e 100%);
+}
+
+.card>h3 {
+    font-size: 20px;
+}
+
+.card>span {
+    font-size: 16px;
+    color: var(--grey);
+}
+
+.divider {
+    width: 100%;
+    border: 0.5px solid #ccc;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+
+}
+
+.profile-button {
+    padding: 0.5rem 3rem;
+    margin-top: 1.5rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-image: linear-gradient(-225deg, #ec334b 0%,
+            #7a10ac 50%, #3b59c5 100%);
+
+}
+
+/* 
+dark and light theme  */
+
+[data-theme="dark"] {
+    --fontColor: #fff;
+    --grey: #e5e5e5;
+    --cardColor: #333;
+}

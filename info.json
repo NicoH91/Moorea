@@ -1,0 +1,25 @@
+{
+    "pilchita": {
+        "medicacion": [
+            {
+                "nombre": "Nombre del medicamento 1",
+                "dosis": "Cantidad de medicamento 1",
+                "frecuencia": "Frecuencia de toma del medicamento 1",
+                "indicaciones": "Indicaciones para el medicamento 1"
+            },
+            {
+                "nombre": "Nombre del medicamento 2",
+                "dosis": "Cantidad de medicamento 2",
+                "frecuencia": "Frecuencia de toma del medicamento 2",
+                "indicaciones": "Indicaciones para el medicamento 2"
+            }
+        ],
+        "veterinaria": {
+            "nombre": "Nombre de la veterinaria",
+            "direccion": "Dirección de la veterinaria",
+            "telefono": "Teléfono de contacto de la veterinaria",
+            "horario": "Horario de atención de la veterinaria"
+        },
+        "historia": "Breve historia del paciente o mascota, incluyendo información relevante como raza, edad, comportamiento, y cualquier antecedente médico importante."
+    }
+}
